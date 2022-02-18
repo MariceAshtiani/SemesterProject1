@@ -1,0 +1,154 @@
+/*General*/
+body,
+main,
+header {
+  max-width: 2000px;
+  width: 100%;
+  margin: 0px;
+  font-family: "museo sans 300", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header img {
+  max-width: 2000px;
+  width: 100%;
+}
+
+.header-image {
+  position: relative;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.red {
+  font-family: "museo sans 700";
+  color: #8e0639;
+}
+
+.line {
+  border: 1px solid #07f59c;
+  margin: 40px 10px;
+}
+/*NAV*/
+nav {
+  display: none;
+}
+
+nav ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #07f59c;
+}
+
+#hamburger-label {
+  margin-left: 10px;
+  font-size: 3vmax;
+  color: white;
+  position: absolute;
+  top: 2%;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+  background-color: black;
+  color: #07f59c;
+  text-align: left;
+  position: absolute;
+  top: 5%;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+/*Home page*/
+main h1 {
+  font-family: "scarlet wood";
+  color: #410587;
+  text-align: center;
+  font-size: 3vmax;
+  margin-bottom: 5px;
+}
+.headline {
+  font-family: "museo sans 700";
+  text-align: center;
+  margin: 0px 10px;
+}
+
+.whale img {
+  max-width: 330px;
+  width: 75%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.first-paragraph,
+.second-paragraph,
+.third-paragraph {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0px 10px;
+}
+
+.neanderthal img,
+.vr img,
+.explode-index img {
+  max-width: 150px;
+  width: 100%;
+  height: 150px;
+  margin-left: 10px;
+  margin-top: 20%;
+  border-radius: 50%;
+}
+
+.paint img {
+  max-width: 150px;
+  width: 100%;
+  height: 150px;
+  margin-top: 20%;
+  border-radius: 50%;
+}
+
+/*Footer*/
+.footer-content {
+  display: flex;
+  flex: 1fr 1fr;
+  background-color: black;
+  color: #b158ab;
+  font-size: 1.5vmax;
+}
+
+.footer-content li {
+  list-style: none;
+  color: #b158ab;
+  font-size: 1.5vmax;
+}
+
+.footer-content a {
+  text-decoration: none;
+  color: #b158ab;
+  font-size: 2vmax;
+  cursor: pointer;
+}
+
+.contact {
+  font-size: 2vmax;
+}
+
+.copyright {
+  color: #b158ab;
+  background-color: black;
+  display: block;
+  text-align: center;
+  padding-bottom: 20px;
+}

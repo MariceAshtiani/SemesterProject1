@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Community Science Museum offers many exhibitions and play-alongs for children to learn and explore">
     <title>CSM | Home</title>
-    <link href="css/styles.css" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/e52758f524.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/vjr8cjk.css">
+    <link href="css/stylesheet.css" rel="stylesheet"/>
 </head>
 <body>
     <header>
-        <img src="images/CSM.jpg" alt="Different moon phases with Community science museum logo">
+        <div class="header-image">
+            <img src="images/CSM.jpg" alt="Different moon phases with Community science museum logo">
+        </div>
+        <label for="hamburger-menu"><i class="fas fa-bars" id="hamburger-label"></i></label>
+        <input type="checkbox" id="hamburger-menu">
         <nav>
-            <label for="hamburger-menu"><i class="fas fa-bars" id="hamburger-label"></i></label>
-            <input type="checkbox" id="hamburger-menu">
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="explore.html">Explore</a></li>
@@ -27,41 +31,41 @@
     <main>
         <section>
             <h1>Come join us</h1>
-            <p>at the Community Science Museum Where we're committed to making science accessible to all.</p>
-            <hr>
-            <div>
+            <p class="headline">at the Community Science Museum Where we're committed to making science accessible to all.</p>
+            <hr class="line">
+            <div class="whale">
                 <img src="images/index/bluewhale.jpg" alt="a bluewhale skeleton hanging from the ceiling in the museum">
             </div>
-            <hr>
-            <div>
-                <p>Over the course of human history, science has developed from our early understanding of fire, wind, water, and earth to exploring everything from galaxies far away to the very building blocks of life itself.</p>
-                <div>
+            <hr class="line">
+            <div class="first-paragraph">
+                <p>Over the course of human history, science has <span class="red">developed</span> from our early understanding of fire, wind, water, and earth to exploring everything from <span class="red">galaxies far away</span> to the very building blocks of life itself.</p>
+                <div class="neanderthal">
                     <img src="images/index/neanderthal.jpg" alt="Evolution of man from monkey to homo-sapiens">
                 </div>
             </div>
-            <hr>
-            <div>
-                <div>
+            <hr class="line">
+            <div class="second-paragraph">
+                <div class="paint">
                     <img src="images/index/billetto-editorial-334686.jpg" alt="a boy painting while waering VR-goggles">
                 </div>
-                <p>The aim of our museum is to create a space where everyone can experience the wonders of our discoveries and perhaps even ignite a lifelong passion to continue the exploration of the world around us.</p>
+                <p>The aim of our museum is to create a space where <span class="red">everyone</span> can experience the wonders of our discoveries and perhaps even ignite a lifelong passion to continue the exploration of the world around us.</p>
             </div>
-            <hr>
-            <div>
-                <p>We believe science should not be confined to the textbook, but brought to life through exhibits. This is why we have over 1000 different exhibits on the many varied subjects of science to explore. </p>
-                <div>
+            <hr class="line">
+            <div class="third-paragraph">
+                <p>We believe science should not be confined to the textbook, but <span class="red">brought to life</span> through exhibits. This is why we have over <span class="red">1000</span> different exhibits on the many varied subjects of science to explore. </p>
+                <div class="vr">
                     <img src="images/index/vr.jpg" alt="a child wearing VR-goggles">
                 </div>
-                <p>Many of these exhibits are designed for you to interact with and play around to see science come to life 
+                <p>Many of these exhibits are designed for you to <span class="red">interact</span> with and <span class="red">play</span> around to see science come to life 
                     (apart from the dinosaur exhibits – they only come to life at night when everyone’s gone home).</p>
-                <div>
+                <div class="explode-index">
                     <img src="images/index/explode.jpg" alt="Two children making some chemistry explode while having fun">
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <div>
+        <div class="footer-content">
             <ul>
                 <h2>Shortcuts</h2>
                 <li><a href="index.html">Home</a></li>
@@ -71,20 +75,19 @@
                 <li><a href="visit.html">Visit us</a></li>
                 <li><a href="involved.html">Get involved</a></li>
             </ul>
+            <ul>
+                <h2>Contact us</h2>
+                <li><span class="contact">Email:</span></li>
+                <li>comsci@museum.com</li>
+                <li><span class="contact">Phone:</span></li>
+                <li>09001234</li>
+                <li><span class="contact">Address:</span></li>
+                <li>982 Stanley Road, BELFAST</li>
+                <li><span class="contact">Org. Nr.:</span></li>
+                <li>978 312 546</li>
+            </ul>
         </div>
-        <div>Copyright &copy; </div>
-        <div>
-            <h2>Contact us</h2>
-            <h3>Email:</h3>
-            <p>comsci@museum.com</p>
-            <h3>Phone:</h3>
-            <p>09001234</p>
-            <h3>Address:</h3>
-            <p>982 Stanley Road</p>
-            <p>BELFAST</p>
-            <h3>Org. Nr.:</h3>
-            <p>978 312 546</p>
-        </div>
+        <div class="copyright">Copyright &copy; </div>
     </footer>
 </body>
 </html>
