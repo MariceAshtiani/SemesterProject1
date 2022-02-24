@@ -78,6 +78,7 @@ main h1 {
   font-size: 3vmax;
   margin-bottom: 5px;
 }
+
 .headline {
   font-family: "museo sans 700";
   text-align: center;
@@ -107,7 +108,7 @@ main h1 {
   width: 100%;
   height: 150px;
   margin-left: 10px;
-  margin-top: 20%;
+  margin-top: 15%;
   border-radius: 50%;
 }
 
@@ -115,22 +116,60 @@ main h1 {
   max-width: 150px;
   width: 100%;
   height: 150px;
-  margin-top: 20%;
+  margin-top: 15%;
   border-radius: 50%;
 }
 
+/*Explore page*/
+
+.explore-main {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+h2 {
+  font-family: "museo sans 700";
+  text-decoration: underline solid #b158ab;
+  margin-left: 10px;
+  font-size: 2.5vmax;
+}
+.head-image img {
+  max-width: 1000px;
+  width: 99%;
+  display: block;
+  margin: 0 auto;
+}
+
+.for-kids p,
+.for-teachers p,
+.for-researchers p {
+  margin-top: 30px;
+}
+
+.bottom-images img {
+  max-width: 200px;
+  width: 100%;
+  height: 180px;
+  margin: 20px 0px;
+}
+
+.bottom-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
 /*Footer*/
+footer {
+  color: #b158ab;
+  background-color: black;
+}
 .footer-content {
   display: flex;
   flex: 1fr 1fr;
-  background-color: black;
-  color: #b158ab;
   font-size: 1.5vmax;
 }
 
 .footer-content li {
   list-style: none;
-  color: #b158ab;
   font-size: 1.5vmax;
 }
 
@@ -145,9 +184,11 @@ main h1 {
   font-size: 2vmax;
 }
 
+.contact-us {
+  padding-left: 20%;
+}
+
 .copyright {
-  color: #b158ab;
-  background-color: black;
   display: block;
   text-align: center;
   padding-bottom: 20px;
