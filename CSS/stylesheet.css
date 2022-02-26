@@ -270,15 +270,13 @@ footer {
   grid-column: 1/2;
 }
 
-.shortcut {
+.footer-content h2 {
   grid-row: 1;
-  grid-column: 1/2;
-}
-
-.footer-content p {
+  margin-left: 40px;
   font-size: 2.5vmax;
   text-decoration: underline;
 }
+
 .contact {
   font-size: 2vmax;
 }
