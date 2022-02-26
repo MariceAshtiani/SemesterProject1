@@ -130,7 +130,8 @@ main h1 {
 .explore-main,
 .exhibition-main,
 .news-main,
-.visit-main {
+.visit-main,
+.involved-main {
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -219,15 +220,27 @@ h2 {
   width: 170px;
 }
 
-.location img,
-.admission img,
-.opening-hours img,
-.cafe img,
-.accessibility img,
-.shop img {
+.small-image img {
   max-width: 200px;
   margin-left: 20px;
   margin-top: 16px;
+  border-radius: 20px;
+}
+
+/*Get involved page*/
+.support,
+.volunteer,
+.internship {
+  text-align: center;
+}
+
+.support p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.internship img {
+  margin-bottom: 30px;
 }
 
 /*Footer*/
@@ -237,14 +250,15 @@ footer {
 }
 
 .footer-content {
-  display: flex;
-  flex: 1fr 1fr;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   font-size: 1.5vmax;
 }
 
 .footer-content li {
   list-style: none;
-  font-size: 1.5vmax;
+  grid-row: 2;
+  grid-column: 2/2;
 }
 
 .footer-content a {
@@ -252,18 +266,21 @@ footer {
   color: #b158ab;
   font-size: 2vmax;
   cursor: pointer;
+  grid-row: 2;
+  grid-column: 1/2;
 }
 
-.footer-content h2 {
-  margin-left: 0;
+.shortcut {
+  grid-row: 1;
+  grid-column: 1/2;
 }
 
+.footer-content p {
+  font-size: 2.5vmax;
+  text-decoration: underline;
+}
 .contact {
   font-size: 2vmax;
-}
-
-.contact-us {
-  padding-left: 20%;
 }
 
 .copyright {
