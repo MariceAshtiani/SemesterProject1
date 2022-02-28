@@ -35,6 +35,18 @@ header img {
   border: 1px solid #07f59c;
   margin: 40px 10px;
 }
+
+h2 {
+  font-family: "museo sans 700";
+  text-decoration: underline solid #b158ab;
+  margin-left: 10px;
+  font-size: 2.5vmax;
+}
+
+p {
+  font-size: 2vmax;
+}
+
 /*NAV*/
 nav {
   display: none;
@@ -48,6 +60,7 @@ nav ul li {
 nav a {
   text-decoration: none;
   color: #07f59c;
+  font-size: 1.5vmax;
 }
 
 #hamburger-label {
@@ -69,10 +82,11 @@ nav a {
   text-align: left;
   position: absolute;
   top: 5%;
-  width: 200px;
-  height: 200px;
+  max-width: 400px;
+  max-height: 400px;
   border-radius: 10px;
   margin: 10px;
+  padding-right: 20px;
 }
 
 /*Home page*/
@@ -86,8 +100,11 @@ main h1 {
 
 .headline {
   font-family: "museo sans 700";
+  font-size: 2vmax;
   text-align: center;
-  margin: 0px 10px;
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
 }
 
 .whale img {
@@ -104,25 +121,21 @@ main h1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 20px 10px;
+  gap: 5px;
 }
 
 .neanderthal img,
 .vr img,
-.explode-index img {
-  max-width: 150px;
-  width: 100%;
-  height: 150px;
-  margin-left: 10px;
-  margin-top: 15%;
-  border-radius: 50%;
-}
-
+.explode-index img,
 .paint img {
-  max-width: 150px;
-  width: 100%;
-  height: 150px;
-  margin-top: 15%;
+  max-width: 400px;
+  width: 90%;
+  height: auto;
+  margin-left: 10px;
+  display: block;
+  margin: 0 auto;
   border-radius: 50%;
+  border: solid #410587;
 }
 
 /*Explore page*/
@@ -136,12 +149,6 @@ main h1 {
   margin-right: 10px;
 }
 
-h2 {
-  font-family: "museo sans 700";
-  text-decoration: underline solid #b158ab;
-  margin-left: 10px;
-  font-size: 2.5vmax;
-}
 .head-image img,
 .bottom-image img {
   max-width: 1000px;
@@ -157,10 +164,13 @@ h2 {
 }
 
 .bottom-images img {
-  max-width: 200px;
-  width: 100%;
-  height: 180px;
-  margin: 20px 0px 30px 0px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 200px;
+  height: 90%;
+  object-fit: scale-down;
+  display: block;
+  margin: 0 auto;
 }
 
 .bottom-images {
@@ -197,7 +207,7 @@ h2 {
 .shop {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 5px;
   margin-bottom: 30px;
 }
 
@@ -217,11 +227,13 @@ h2 {
 .opening-hours img {
   grid-row: 2;
   grid-column: 1/3;
-  width: 170px;
+  max-width: 170px;
+  width: 90%;
 }
 
 .small-image img {
-  max-width: 200px;
+  max-width: 170px;
+  width: 90%;
   margin-left: 20px;
   margin-top: 16px;
   border-radius: 20px;
@@ -247,42 +259,290 @@ h2 {
 footer {
   color: #b158ab;
   background-color: black;
+  padding: 0 10px;
 }
 
 .footer-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  font-size: 1.5vmax;
 }
 
 .footer-content li {
   list-style: none;
   grid-row: 2;
   grid-column: 2/2;
+  margin-bottom: 5px;
+  font-size: 1.2vmax;
 }
 
 .footer-content a {
   text-decoration: none;
   color: #b158ab;
-  font-size: 2vmax;
   cursor: pointer;
   grid-row: 2;
   grid-column: 1/2;
+  font-size: 1.5vmax;
 }
 
 .footer-content h2 {
   grid-row: 1;
-  margin-left: 40px;
-  font-size: 2.5vmax;
   text-decoration: underline;
+  margin-bottom: 20px !important;
+  margin-top: 20px !important;
 }
 
 .contact {
-  font-size: 2vmax;
+  font-weight: bold;
+  font-size: 1.5vmax;
+}
+
+.shortcut,
+.contact-us,
+.footer-content h2 {
+  display: block;
+  margin: 0 auto;
+}
+
+.contact-header {
+  padding-left: 20px;
+}
+
+.shortcut-header {
+  padding-left: 35px;
 }
 
 .copyright {
   display: block;
   text-align: center;
   padding-bottom: 20px;
+  padding-top: 20px;
+  font-size: 1.5vmax;
+}
+
+/*Different medias*/
+
+/*iPad*/
+
+@media screen and (min-width: 600px) {
+  /*home page*/
+
+  .main h1 {
+    font-size: 3vw;
+  }
+
+  .first-paragraph,
+  .second-paragraph,
+  .third-paragraph {
+    gap: 20px;
+  }
+
+  /*Explore*/
+  .bottom-images img {
+    max-width: 1000px;
+    width: 90%;
+    max-height: 400px;
+    height: 90%;
+    object-fit: scale-down;
+  }
+
+  /*Exhibition*/
+
+  .exhibition-main p,
+  .news-main p {
+    margin-left: 26.5px;
+    margin-right: 26.5px;
+  }
+
+  /*visit*/
+  .opening-hours img,
+  .small-image img {
+    max-width: 400px;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .internship {
+    margin-bottom: 30px;
+  }
+
+  .involved-main p {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  /*footer*/
+  .contact-header {
+    padding-right: 10px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  h2 {
+    font-size: 2vmax;
+  }
+
+  p {
+    font-size: 1.5vmax;
+  }
+
+  /*homepage*/
+  .whale img {
+    max-width: 400px;
+    width: 75%;
+  }
+
+  .headline {
+    max-width: 600px;
+  }
+
+  .first-paragraph,
+  .third-paragraph {
+    margin-left: 50px;
+  }
+
+  .second-paragraph {
+    margin-right: 50px;
+  }
+
+  /*explore*/
+
+  .for-kids,
+  .for-teachers,
+  .for-researchers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .for-kids h2,
+  .for-teachers h2,
+  .for-researchers h2 {
+    grid-row: 1;
+    grid-column: 1/2;
+    margin-left: 30px;
+  }
+
+  .kids-header {
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .kids-text {
+    grid-row: 3;
+    grid-column: 1/2;
+    margin-left: 30px;
+    margin-top: 50px;
+  }
+
+  .kids-text p {
+    margin-bottom: 20px !important;
+  }
+
+  .kids-images {
+    grid-row: 3;
+    grid-column: 2/2;
+    margin-top: 20px;
+  }
+
+  .for-kids p,
+  .for-teachers p,
+  .for-researchers p {
+    max-width: 1000px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /*exhibition*/
+
+  .evolution {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .evolution h2 {
+    grid-row: 1;
+    grid-column: 1/2;
+  }
+
+  .evolution-text {
+    grid-row: 2;
+    grid-column: 1/2;
+  }
+
+  .evo-image {
+    grid-row: 2;
+    grid-column: 2/2;
+    max-width: 800px;
+  }
+
+  .mammoth-image {
+    grid-row: 3;
+    grid-column: 2/2;
+  }
+
+  /*news*/
+
+  .news-main p,
+  .exhibition-main p {
+    max-width: 1000px;
+    display: block;
+    margin: 0 auto;
+    padding: 30px 10px;
+  }
+
+  /*get involved*/
+
+  .support p {
+    text-align: left;
+  }
+
+  .volunteer,
+  .internship {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .volunteer h2 {
+    grid-row: 1;
+    grid-column: 1/2;
+    text-align: left;
+    margin: 50px;
+  }
+
+  .volunteer p {
+    grid-row: 2;
+    grid-column: 1/2;
+    text-align: left;
+  }
+
+  .volunteer-image {
+    grid-row: 2;
+    grid-column: 2/2;
+  }
+
+  .internship h2 {
+    grid-row: 1;
+    grid-column: 2/2;
+    text-align: left;
+    margin-left: 50px;
+  }
+
+  .internship p {
+    grid-row: 2;
+    grid-column: 2/2;
+    text-align: left;
+  }
+
+  .internship-image {
+    grid-row: 2;
+    grid-column: 1/2;
+  }
+  /*footer*/
+  .contact-header {
+    padding-right: 50px;
+  }
+
+  .shortcut-header {
+    padding-right: 25px;
+  }
 }
