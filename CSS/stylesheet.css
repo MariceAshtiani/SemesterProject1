@@ -192,13 +192,17 @@ main h1 {
   margin-bottom: 30px;
 }
 
+.biology {
+  text-align: center;
+}
+
+.bio-text {
+  text-align: left;
+}
 .heart-image,
 .body-image {
-  max-width: 300px;
-  width: 50%;
-  height: 130px;
-  display: block;
-  float: left;
+  display: inline-block;
+  width: 40%;
 }
 
 /*news page*/
