@@ -192,6 +192,15 @@ main h1 {
   margin-bottom: 30px;
 }
 
+.heart-image,
+.body-image {
+  max-width: 300px;
+  width: 50%;
+  height: 130px;
+  display: block;
+  float: left;
+}
+
 /*news page*/
 .bottom-image img {
   margin-bottom: 30px;
@@ -478,6 +487,7 @@ footer {
   .mammoth-image {
     grid-row: 3;
     grid-column: 2/2;
+    max-width: 800px;
   }
 
   /*news*/
@@ -488,6 +498,11 @@ footer {
     display: block;
     margin: 0 auto;
     padding: 30px 10px;
+  }
+
+  /*visit*/
+  .visit-main {
+    margin: 0 50px;
   }
 
   /*get involved*/
