@@ -201,14 +201,13 @@ main h1 {
 
 .heart-image img,
 .skull img {
-  max-width: 200px;
-  width: 100%;
-  object-fit: cover;
+  width: 40%;
 }
 
 .heart-image,
 .skull {
-  display: inline-block;
+  display: inline;
+  margin: 10px;
 }
 
 .neanderthal-image {
@@ -380,11 +379,10 @@ footer {
     margin-bottom: 30px;
   }
 
-  .heart-image img,
-  .skull img {
-    max-width: 500px;
-    width: 90%;
-    object-fit: scale-down;
+  .heart-image,
+  .skull {
+    display: inline;
+    margin: 20px;
   }
 
   /*visit*/
@@ -564,8 +562,6 @@ footer {
     grid-column: 2/2;
     display: block;
     margin: 0 auto;
-    max-width: 500px;
-    width: 90%;
   }
 
   .skull {
@@ -574,10 +570,13 @@ footer {
     padding-top: 20px;
   }
 
-  .heart-image img,
+  .heart-image img {
+    width: 30%;
+  }
+
   .skull img {
-    max-width: 500px;
-    width: 90%;
+    width: 60%;
+    margin-bottom: 20px;
   }
 
   /*news*/
