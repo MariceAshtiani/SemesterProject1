@@ -24,11 +24,13 @@ header img {
 .red {
   font-family: "museo sans 700";
   color: #8e0639;
+  font-weight: bolder;
 }
 
 .yellow {
   font-family: "museo sans 700";
   color: #fbaa30;
+  font-weight: bolder;
 }
 
 .line {
