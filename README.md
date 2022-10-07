@@ -35,7 +35,7 @@ Stages of development:
 1. Clone the repo
 
 ```bash
-
+https://github.com/MariceAshtiani/SemesterProject1.git
 ```
 
 2. Open with Visual Studio Code, use Live server (VSC extension) to view the site.
